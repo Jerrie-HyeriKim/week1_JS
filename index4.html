@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outer function and Inner function</title>
+</head>
+<body>
+    <script>
+        function show() {
+            var j = "J a Local Vari of Outer Function";
+            document.write(j + "<br>");
+            function innerFun() {
+                var k = "K a Local Vari of Inner Function";
+                document.write(k + "<br>");
+                document.write(j + "<br>");
+            }
+            innerFun()
+        }
+        show();
+    </script>
+</body>
+</html>
